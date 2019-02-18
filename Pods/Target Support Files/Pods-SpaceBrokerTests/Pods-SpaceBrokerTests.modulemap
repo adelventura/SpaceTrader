@@ -1,0 +1,6 @@
+framework module Pods_SpaceBrokerTests {
+  umbrella header "Pods-SpaceBrokerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D63C00F22193C2D006916A6 /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D63C00E22193C2D006916A6 /* Difficulty.swift */; };
+		8D63C01122193E9F006916A6 /* ConfigurePlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D63C01022193E9F006916A6 /* ConfigurePlayerViewModel.swift */; };
+		8D900B9C221B29BF00FD6FC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D900B9B221B29BF00FD6FC0 /* GoogleService-Info.plist */; };
 		8DD2FF2B221668BF00E09482 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2FF2A221668BF00E09482 /* AppDelegate.swift */; };
 		8DD2FF2D221668BF00E09482 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2FF2C221668BF00E09482 /* ViewController.swift */; };
 		8DD2FF30221668BF00E09482 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DD2FF2E221668BF00E09482 /* Main.storyboard */; };
 		8DD2FF32221668C100E09482 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DD2FF31221668C100E09482 /* Assets.xcassets */; };
 		8DD2FF35221668C100E09482 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DD2FF33221668C100E09482 /* LaunchScreen.storyboard */; };
 		8DD2FF40221668C100E09482 /* SpaceBrokerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2FF3F221668C100E09482 /* SpaceBrokerTests.swift */; };
+		8DD2FF502216738900E09482 /* Broker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2FF4F2216738900E09482 /* Broker.swift */; };
+		90E7F18959EA0F90CF7A1E5F /* Pods_SpaceBrokerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 129BB6B4811066F6BAC9E77B /* Pods_SpaceBrokerTests.framework */; };
+		DB365044E9BABF2720338D6E /* Pods_SpaceBroker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7DB4C670289FBB56200350 /* Pods_SpaceBroker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +32,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		129BB6B4811066F6BAC9E77B /* Pods_SpaceBrokerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceBrokerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A7DB4C670289FBB56200350 /* Pods_SpaceBroker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceBroker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46460143395A2C15CC0D7080 /* Pods-SpaceBrokerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceBrokerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpaceBrokerTests/Pods-SpaceBrokerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		59B8541F1532458454C71E1C /* Pods-SpaceBroker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceBroker.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpaceBroker/Pods-SpaceBroker.release.xcconfig"; sourceTree = "<group>"; };
+		8D63C00E22193C2D006916A6 /* Difficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
+		8D63C01022193E9F006916A6 /* ConfigurePlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurePlayerViewModel.swift; sourceTree = "<group>"; };
+		8D900B9B221B29BF00FD6FC0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8DD2FF27221668BF00E09482 /* SpaceBroker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceBroker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD2FF2A221668BF00E09482 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DD2FF2C221668BF00E09482 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +49,9 @@
 		8DD2FF3B221668C100E09482 /* SpaceBrokerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceBrokerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD2FF3F221668C100E09482 /* SpaceBrokerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceBrokerTests.swift; sourceTree = "<group>"; };
 		8DD2FF41221668C100E09482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DD2FF4F2216738900E09482 /* Broker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Broker.swift; sourceTree = "<group>"; };
+		B3EA8C8432B1A30DA4659840 /* Pods-SpaceBrokerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceBrokerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpaceBrokerTests/Pods-SpaceBrokerTests.release.xcconfig"; sourceTree = "<group>"; };
+		B6984FA56D59576458B10EF2 /* Pods-SpaceBroker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceBroker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpaceBroker/Pods-SpaceBroker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB365044E9BABF2720338D6E /* Pods_SpaceBroker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +67,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90E7F18959EA0F90CF7A1E5F /* Pods_SpaceBrokerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05D37F3B122C927895858241 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6984FA56D59576458B10EF2 /* Pods-SpaceBroker.debug.xcconfig */,
+				59B8541F1532458454C71E1C /* Pods-SpaceBroker.release.xcconfig */,
+				46460143395A2C15CC0D7080 /* Pods-SpaceBrokerTests.debug.xcconfig */,
+				B3EA8C8432B1A30DA4659840 /* Pods-SpaceBrokerTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8DD2FF1E221668BF00E09482 = {
 			isa = PBXGroup;
 			children = (
 				8DD2FF29221668BF00E09482 /* SpaceBroker */,
 				8DD2FF3E221668C100E09482 /* SpaceBrokerTests */,
 				8DD2FF28221668BF00E09482 /* Products */,
+				05D37F3B122C927895858241 /* Pods */,
+				A9310865E4A53A8AC1CFA7EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +108,11 @@
 		8DD2FF29221668BF00E09482 /* SpaceBroker */ = {
 			isa = PBXGroup;
 			children = (
+				8DD2FF4E2216696000E09482 /* View */,
+				8DD2FF4C2216693700E09482 /* Model */,
+				8DD2FF4D2216694200E09482 /* SupportingFiles */,
 				8DD2FF2A221668BF00E09482 /* AppDelegate.swift */,
-				8DD2FF2C221668BF00E09482 /* ViewController.swift */,
-				8DD2FF2E221668BF00E09482 /* Main.storyboard */,
-				8DD2FF31221668C100E09482 /* Assets.xcassets */,
-				8DD2FF33221668C100E09482 /* LaunchScreen.storyboard */,
-				8DD2FF36221668C100E09482 /* Info.plist */,
+				8D900B9B221B29BF00FD6FC0 /* GoogleService-Info.plist */,
 			);
 			path = SpaceBroker;
 			sourceTree = "<group>";
@@ -96,6 +126,44 @@
 			path = SpaceBrokerTests;
 			sourceTree = "<group>";
 		};
+		8DD2FF4C2216693700E09482 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8DD2FF4F2216738900E09482 /* Broker.swift */,
+				8D63C00E22193C2D006916A6 /* Difficulty.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8DD2FF4D2216694200E09482 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8DD2FF31221668C100E09482 /* Assets.xcassets */,
+				8DD2FF33221668C100E09482 /* LaunchScreen.storyboard */,
+				8DD2FF36221668C100E09482 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		8DD2FF4E2216696000E09482 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8D63C01022193E9F006916A6 /* ConfigurePlayerViewModel.swift */,
+				8DD2FF2C221668BF00E09482 /* ViewController.swift */,
+				8DD2FF2E221668BF00E09482 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A9310865E4A53A8AC1CFA7EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A7DB4C670289FBB56200350 /* Pods_SpaceBroker.framework */,
+				129BB6B4811066F6BAC9E77B /* Pods_SpaceBrokerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DD2FF44221668C100E09482 /* Build configuration list for PBXNativeTarget "SpaceBroker" */;
 			buildPhases = (
+				5F130B4686CB8BB0C0D50FBE /* [CP] Check Pods Manifest.lock */,
 				8DD2FF23221668BF00E09482 /* Sources */,
 				8DD2FF24221668BF00E09482 /* Frameworks */,
 				8DD2FF25221668BF00E09482 /* Resources */,
+				62D0406F4513DEE3FF6D58C2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +190,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DD2FF47221668C100E09482 /* Build configuration list for PBXNativeTarget "SpaceBrokerTests" */;
 			buildPhases = (
+				57B4E13186E638019FA0CA7F /* [CP] Check Pods Manifest.lock */,
 				8DD2FF37221668C100E09482 /* Sources */,
 				8DD2FF38221668C100E09482 /* Frameworks */,
 				8DD2FF39221668C100E09482 /* Resources */,
@@ -178,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DD2FF35221668C100E09482 /* LaunchScreen.storyboard in Resources */,
+				8D900B9C221B29BF00FD6FC0 /* GoogleService-Info.plist in Resources */,
 				8DD2FF32221668C100E09482 /* Assets.xcassets in Resources */,
 				8DD2FF30221668BF00E09482 /* Main.storyboard in Resources */,
 			);
@@ -192,12 +264,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		57B4E13186E638019FA0CA7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpaceBrokerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F130B4686CB8BB0C0D50FBE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpaceBroker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62D0406F4513DEE3FF6D58C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SpaceBroker/Pods-SpaceBroker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpaceBroker/Pods-SpaceBroker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8DD2FF23221668BF00E09482 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D63C01122193E9F006916A6 /* ConfigurePlayerViewModel.swift in Sources */,
+				8DD2FF502216738900E09482 /* Broker.swift in Sources */,
 				8DD2FF2D221668BF00E09482 /* ViewController.swift in Sources */,
+				8D63C00F22193C2D006916A6 /* Difficulty.swift in Sources */,
 				8DD2FF2B221668BF00E09482 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,10 +492,12 @@
 		};
 		8DD2FF45221668C100E09482 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6984FA56D59576458B10EF2 /* Pods-SpaceBroker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SpaceBroker/Info.plist;
+				DEVELOPMENT_TEAM = NAY4QNQ82N;
+				INFOPLIST_FILE = SpaceBroker/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -375,10 +511,12 @@
 		};
 		8DD2FF46221668C100E09482 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59B8541F1532458454C71E1C /* Pods-SpaceBroker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SpaceBroker/Info.plist;
+				DEVELOPMENT_TEAM = NAY4QNQ82N;
+				INFOPLIST_FILE = SpaceBroker/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,6 +530,7 @@
 		};
 		8DD2FF48221668C100E09482 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46460143395A2C15CC0D7080 /* Pods-SpaceBrokerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -412,6 +551,7 @@
 		};
 		8DD2FF49221668C100E09482 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3EA8C8432B1A30DA4659840 /* Pods-SpaceBrokerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
