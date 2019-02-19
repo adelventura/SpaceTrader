@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var difficultyButtonContainer: UIView!
     @IBOutlet var difficultyButtons: [UIButton]!
+
     
     private let vm = ConfigurePlayerViewModel()
     
@@ -24,7 +25,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         createButton.contentEdgeInsets = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
         createButton.layer.cornerRadius = 10
         
@@ -43,6 +44,7 @@ class ViewController: UIViewController {
             button.contentEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         }
         
+        self.hideKeyboardWhenTappedAround()
     }
     
     // MARK: - Actions
@@ -72,11 +74,6 @@ class ViewController: UIViewController {
         present(alert, animated: true)
         
     }
-    
-//    @IBAction func removeKeyboard() {
-//        self.nameField.resignFirstResponder()
-//    }
-    
 
     // MARK: - Effects
     
@@ -90,5 +87,17 @@ class ViewController: UIViewController {
         createButton.transform = .identity
     }
     
+}
+
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }
 
