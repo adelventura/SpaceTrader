@@ -18,24 +18,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SpaceMerchant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4n-fo-wFl">
-                                <rect key="frame" x="65.5" y="120" width="244" height="40"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Space Broker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4n-fo-wFl">
+                                <rect key="frame" x="54" y="200" width="267" height="57.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="267" id="KkL-hx-UpG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="48"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="r4n-fo-wFl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="Gcc-eU-JRx"/>
+                            <constraint firstItem="r4n-fo-wFl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="180" id="KIf-PI-Tzb"/>
                             <constraint firstItem="r4n-fo-wFl" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="NY7-Ns-Haa"/>
-                            <constraint firstItem="r4n-fo-wFl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="bPT-BV-ode"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
 </document>

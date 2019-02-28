@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Broker {
+class Player {
     
     let name: String
     

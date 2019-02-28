@@ -15,9 +15,19 @@ class ViewController: UIViewController {
     @IBOutlet var nameField: UITextField!
     @IBOutlet var createButton: UIButton!
     
+    @IBOutlet weak var pilotSlider: UISlider!
+    @IBOutlet weak var fighterSlider: UISlider!
+    @IBOutlet weak var traderSlider: UISlider!
+    @IBOutlet weak var engineerSlider: UISlider!
+    
+    @IBOutlet weak var totalPointsUsed: UILabel!
+    @IBOutlet weak var pilotPoints: UILabel!
+    @IBOutlet weak var fighterPoints: UILabel!
+    @IBOutlet weak var traderPoints: UILabel!
+    @IBOutlet weak var engineerPoints: UILabel!
+    
     @IBOutlet var difficultyButtonContainer: UIView!
     @IBOutlet var difficultyButtons: [UIButton]!
-
     
     private let vm = ConfigurePlayerViewModel()
     
@@ -49,6 +59,31 @@ class ViewController: UIViewController {
     
     // MARK: - Actions
     
+    @IBAction func changePilotPoints(_ sender: UISlider) {
+        pilotSlider.value = roundf(pilotSlider.value)
+        updateSkillPoints(slider: pilotSlider, label: pilotPoints)
+        updateTotalSkillPoints()
+        
+    }
+    
+    @IBAction func changeFighterPoints(_ sender: UISlider) {
+        fighterSlider.value = roundf(fighterSlider.value)
+        updateSkillPoints(slider: fighterSlider, label: fighterPoints)
+        updateTotalSkillPoints()
+    }
+    
+    @IBAction func changeTraderPoints(_ sender: UISlider) {
+        traderSlider.value = roundf(traderSlider.value)
+        updateSkillPoints(slider: traderSlider, label: traderPoints)
+        updateTotalSkillPoints()
+    }
+    
+    @IBAction func changeEngineerPoints(_ sender: UISlider) {
+        engineerSlider.value = roundf(engineerSlider.value)
+        updateSkillPoints(slider: engineerSlider, label: engineerPoints)
+        updateTotalSkillPoints()
+    }
+    
     @IBAction func selectedDifficulty(sender: UIButton) {
         guard let index = difficultyButtons.firstIndex(of: sender) else {
             return
@@ -62,17 +97,17 @@ class ViewController: UIViewController {
     }
     
     @IBAction func create() {
-        let alert: UIAlertController
         if let name = nameField.text, let difficulty = vm.difficulty, name.count > 0 {
-            alert = UIAlertController(title: "Created!", message: "Broker by the name of \(name). Difficulty: \(difficulty)", preferredStyle: .alert)
+            let vc = UIViewController(nibName: nil, bundle: nil)
+            vc.view.backgroundColor = .white
+            
+            present(vc, animated: true)
         } else {
-            alert = UIAlertController(title: "Name missing or difficulty not selected!", message: nil, preferredStyle: .alert)
+            let alert = UIAlertController(title: "Name missing or difficulty not selected!", message: nil, preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+            present(alert, animated: true)
         }
-        
-        alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
-        
-        present(alert, animated: true)
-        
     }
 
     // MARK: - Effects
@@ -85,6 +120,14 @@ class ViewController: UIViewController {
     @IBAction func up() {
         createButton.layer.shadowOpacity = 1
         createButton.transform = .identity
+    }
+    
+    func updateTotalSkillPoints() {
+        totalPointsUsed.text = "Skill Points Allocated: \(pilotSlider.value + fighterSlider.value + traderSlider.value + engineerSlider.value)/16"
+    }
+    
+    func updateSkillPoints(slider: UISlider, label: UILabel) {
+        label.text = "\(slider.value)"
     }
     
 }
