@@ -100,8 +100,9 @@ class ViewController: UIViewController {
         if let name = nameField.text, let difficulty = vm.difficulty, name.count > 0 {
             let vc = UIViewController(nibName: nil, bundle: nil)
             vc.view.backgroundColor = .white
-            
+
             present(vc, animated: true)
+          
         } else {
             let alert = UIAlertController(title: "Name missing or difficulty not selected!", message: nil, preferredStyle: .alert)
             
@@ -123,11 +124,27 @@ class ViewController: UIViewController {
     }
     
     func updateTotalSkillPoints() {
-        totalPointsUsed.text = "Skill Points Allocated: \(pilotSlider.value + fighterSlider.value + traderSlider.value + engineerSlider.value)/16"
+        let pilotPoints: Int = Int(pilotSlider.value)
+        let fighterPoints: Int = Int(fighterSlider.value)
+        let traderPoints: Int = Int(traderSlider.value)
+        let engineerPoints: Int = Int(engineerSlider.value)
+        
+        totalPointsUsed.text = "Total Skill Points: \(pilotPoints + fighterPoints + traderPoints + engineerPoints)/16"
     }
     
     func updateSkillPoints(slider: UISlider, label: UILabel) {
-        label.text = "\(slider.value)"
+        label.text = "\(Int(slider.value))"
+    }
+    
+    func updateSkills() {
+        let maxPoints: Int = 16
+        let remainingPoints = maxPoints - Int(pilotSlider.value) - Int(fighterSlider.value) - Int(traderSlider.value) - Int(engineerSlider.value)
+        
+        
+        if remainingPoints < 0 {
+            
+        }
+        
     }
     
 }
