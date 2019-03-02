@@ -31,6 +31,12 @@ class ViewController: UIViewController {
     
     private let vm = ConfigurePlayerViewModel()
     
+    //
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     // MARK: - Lifecycle
 
     override func viewDidLoad() {
