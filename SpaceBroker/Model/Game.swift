@@ -13,7 +13,7 @@ private enum Keys {
 }
 
 class Game: Codable {
-    let player: Player
+    let player: Player    
     let universe: [Star]
     let difficulty: Difficulty
     

@@ -8,6 +8,16 @@
 
 import Foundation
 
+class Location: Codable {
+    var star: Star
+    var planet: Planet
+    
+    init(star: Star, planet: Planet) {
+        self.star = star
+        self.planet = planet
+    }
+}
+
 class Player: Codable {
     
     let name: String
@@ -18,6 +28,7 @@ class Player: Codable {
     let engineerSlider: Int
     
     var ship: Ship
+    var location: Location!
     
     init(name: String,
          pilotSlider: Int,
@@ -34,6 +45,8 @@ class Player: Codable {
         self.engineerSlider = engineerSlider
         
         self.ship = ship
+        
+        self.location = nil
     }
     
 }

@@ -10,12 +10,14 @@ import UIKit
 
 class StarViewController: UIViewController {
     
+    var game: Game!
+    
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = "Star: Blah"
+        navigationItem.title = "Star: \(game.player.location.star.name)"
     }
     
 }

@@ -45,6 +45,7 @@ class StartViewController: UIViewController {
             return
         }
         
+        vc.game = game
         let nav = UINavigationController(rootViewController: vc)
         present(nav, animated: true)
     }
@@ -58,15 +59,20 @@ extension StartViewController: CreatePlayerDelegate {
         var stars = (0..<difficulty.numberOfStars)
             .map { _ in Star.random() }
         
-        stars.append(Star(
+        let initialPlanet = Planet(name: "Paradise-1")
+        let initialStar = Star(
             name: "Paradise",
             starType: .Binary,
             coordinates: CGPoint(x: 0, y: 0),
-            planets: [Planet(name: "Paradise-1")],
+            planets: [initialPlanet],
             techLevel: .PostIndustrial,
             politicalSystem: .Democracy,
-            resource: .NoSpecialResources)
+            resource: .NoSpecialResources
         )
+        
+        stars.append(initialStar)
+        
+        player.location = Location(star: initialStar, planet: initialPlanet)
         
         let game = Game(player: player, universe: stars, difficulty: difficulty)
         game.save()
