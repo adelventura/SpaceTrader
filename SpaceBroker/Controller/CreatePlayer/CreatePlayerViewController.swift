@@ -8,7 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+private enum Constants {
+    static let TotalPoints: Int = 16
+}
+
+class CreatePlayerViewController: UIViewController {
 
     // MARK: - Properties
     
@@ -29,9 +33,9 @@ class ViewController: UIViewController {
     @IBOutlet var difficultyButtonContainer: UIView!
     @IBOutlet var difficultyButtons: [UIButton]!
     
-    private let vm = ConfigurePlayerViewModel()
+    private var difficulty: Difficulty = .beginner
     
-    //
+    // MARK: - Status Bar
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -60,6 +64,8 @@ class ViewController: UIViewController {
             button.contentEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         }
         
+        selectedDifficulty(sender: difficultyButtons.first!)
+        
         self.hideKeyboardWhenTappedAround()
     }
     
@@ -68,26 +74,26 @@ class ViewController: UIViewController {
     @IBAction func changePilotPoints(_ sender: UISlider) {
         pilotSlider.value = roundf(pilotSlider.value)
         updateSkillPoints(slider: pilotSlider, label: pilotPoints)
-        updateTotalSkillPoints()
+        updateTotalSkillPoints(sender)
         
     }
     
     @IBAction func changeFighterPoints(_ sender: UISlider) {
         fighterSlider.value = roundf(fighterSlider.value)
         updateSkillPoints(slider: fighterSlider, label: fighterPoints)
-        updateTotalSkillPoints()
+        updateTotalSkillPoints(sender)
     }
     
     @IBAction func changeTraderPoints(_ sender: UISlider) {
         traderSlider.value = roundf(traderSlider.value)
         updateSkillPoints(slider: traderSlider, label: traderPoints)
-        updateTotalSkillPoints()
+        updateTotalSkillPoints(sender)
     }
     
     @IBAction func changeEngineerPoints(_ sender: UISlider) {
         engineerSlider.value = roundf(engineerSlider.value)
         updateSkillPoints(slider: engineerSlider, label: engineerPoints)
-        updateTotalSkillPoints()
+        updateTotalSkillPoints(sender)
     }
     
     @IBAction func selectedDifficulty(sender: UIButton) {
@@ -95,26 +101,24 @@ class ViewController: UIViewController {
             return
         }
         
-        vm.difficulty = Difficulty.allCases[index]
+        difficulty = Difficulty.allCases[index]
         difficultyButtons.forEach { button in
             button.backgroundColor = .clear
         }
+        
         sender.backgroundColor = UIColor(red: 0.3, green: 0.3, blue: 0.8, alpha: 1.0)
     }
     
     @IBAction func create() {
-        if let name = nameField.text, let difficulty = vm.difficulty, name.count > 0 {
-            let vc = UIViewController(nibName: nil, bundle: nil)
-            vc.view.backgroundColor = .white
-
-            present(vc, animated: true)
-          
-        } else {
-            let alert = UIAlertController(title: "Name missing or difficulty not selected!", message: nil, preferredStyle: .alert)
+        guard let name = nameField.text, name.count > 0 else {
+            let alert = UIAlertController(title: "Name missing!", message: nil, preferredStyle: .alert)
             
             alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
             present(alert, animated: true)
+            return
         }
+
+        // TODO: move on
     }
 
     // MARK: - Effects
@@ -129,28 +133,30 @@ class ViewController: UIViewController {
         createButton.transform = .identity
     }
     
-    func updateTotalSkillPoints() {
-        let pilotPoints: Int = Int(pilotSlider.value)
-        let fighterPoints: Int = Int(fighterSlider.value)
-        let traderPoints: Int = Int(traderSlider.value)
-        let engineerPoints: Int = Int(engineerSlider.value)
+    func updateTotalSkillPoints(_ sender: UISlider) {
+        let sliders: [UISlider] = [pilotSlider, fighterSlider, traderSlider, engineerSlider]
         
-        totalPointsUsed.text = "Total Skill Points: \(pilotPoints + fighterPoints + traderPoints + engineerPoints)/16"
+        var total: Int {
+            return sliders.reduce(0) { (sum, slider) in
+                return sum + Int(slider.value)
+            }
+        }
+
+        var delta = min(0, Constants.TotalPoints - total)
+        while (delta < 0) {
+            sliders
+                .filter { $0 != sender && $0.value > 0 }
+                .forEach {
+                    delta += 1
+                    $0.value -= 1
+            }
+        }
+        
+        totalPointsUsed.text = "Total Skill Points: \(total)/\(Constants.TotalPoints)"
     }
     
     func updateSkillPoints(slider: UISlider, label: UILabel) {
         label.text = "\(Int(slider.value))"
-    }
-    
-    func updateSkills() {
-        let maxPoints: Int = 16
-        let remainingPoints = maxPoints - Int(pilotSlider.value) - Int(fighterSlider.value) - Int(traderSlider.value) - Int(engineerSlider.value)
-        
-        
-        if remainingPoints < 0 {
-            
-        }
-        
     }
     
 }

@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8D63C00F22193C2D006916A6 /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D63C00E22193C2D006916A6 /* Difficulty.swift */; };
-		8D63C01122193E9F006916A6 /* ConfigurePlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D63C01022193E9F006916A6 /* ConfigurePlayerViewModel.swift */; };
+		8D8E1621226CEA9C00EBDCE2 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E1620226CEA9C00EBDCE2 /* Game.swift */; };
+		8D8E1623226CEB7600EBDCE2 /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E1622226CEB7600EBDCE2 /* Ship.swift */; };
 		8D900B9C221B29BF00FD6FC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D900B9B221B29BF00FD6FC0 /* GoogleService-Info.plist */; };
 		8DBE8D4A222522410094CF6E /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBE8D49222522410094CF6E /* Planet.swift */; };
 		8DBE8D4C222522590094CF6E /* PoliticalSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBE8D4B222522590094CF6E /* PoliticalSystem.swift */; };
@@ -18,7 +19,7 @@
 		8DBE8D542225229D0094CF6E /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBE8D532225229D0094CF6E /* Star.swift */; };
 		8DBE8D56222524D80094CF6E /* ShipType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBE8D55222524D80094CF6E /* ShipType.swift */; };
 		8DD2FF2B221668BF00E09482 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2FF2A221668BF00E09482 /* AppDelegate.swift */; };
-		8DD2FF2D221668BF00E09482 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2FF2C221668BF00E09482 /* ViewController.swift */; };
+		8DD2FF2D221668BF00E09482 /* CreatePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2FF2C221668BF00E09482 /* CreatePlayerViewController.swift */; };
 		8DD2FF30221668BF00E09482 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DD2FF2E221668BF00E09482 /* Main.storyboard */; };
 		8DD2FF32221668C100E09482 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DD2FF31221668C100E09482 /* Assets.xcassets */; };
 		8DD2FF35221668C100E09482 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DD2FF33221668C100E09482 /* LaunchScreen.storyboard */; };
@@ -44,7 +45,8 @@
 		46460143395A2C15CC0D7080 /* Pods-SpaceBrokerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceBrokerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpaceBrokerTests/Pods-SpaceBrokerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		59B8541F1532458454C71E1C /* Pods-SpaceBroker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceBroker.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpaceBroker/Pods-SpaceBroker.release.xcconfig"; sourceTree = "<group>"; };
 		8D63C00E22193C2D006916A6 /* Difficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
-		8D63C01022193E9F006916A6 /* ConfigurePlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurePlayerViewModel.swift; sourceTree = "<group>"; };
+		8D8E1620226CEA9C00EBDCE2 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		8D8E1622226CEB7600EBDCE2 /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
 		8D900B9B221B29BF00FD6FC0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8DBE8D49222522410094CF6E /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		8DBE8D4B222522590094CF6E /* PoliticalSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticalSystem.swift; sourceTree = "<group>"; };
@@ -55,7 +57,7 @@
 		8DBE8D55222524D80094CF6E /* ShipType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipType.swift; sourceTree = "<group>"; };
 		8DD2FF27221668BF00E09482 /* SpaceBroker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceBroker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD2FF2A221668BF00E09482 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8DD2FF2C221668BF00E09482 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8DD2FF2C221668BF00E09482 /* CreatePlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePlayerViewController.swift; sourceTree = "<group>"; };
 		8DD2FF2F221668BF00E09482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8DD2FF31221668C100E09482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DD2FF34221668C100E09482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,6 +101,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8D8E1624226CEC7D00EBDCE2 /* CreatePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				8DD2FF2C221668BF00E09482 /* CreatePlayerViewController.swift */,
+			);
+			path = CreatePlayer;
+			sourceTree = "<group>";
+		};
 		8DD2FF1E221668BF00E09482 = {
 			isa = PBXGroup;
 			children = (
@@ -122,7 +132,7 @@
 		8DD2FF29221668BF00E09482 /* SpaceBroker */ = {
 			isa = PBXGroup;
 			children = (
-				8DD2FF4E2216696000E09482 /* View */,
+				8DD2FF4E2216696000E09482 /* Controller */,
 				8DD2FF4C2216693700E09482 /* Model */,
 				8DD2FF4D2216694200E09482 /* SupportingFiles */,
 				8DD2FF2A221668BF00E09482 /* AppDelegate.swift */,
@@ -152,6 +162,8 @@
 				8DBE8D4F222522740094CF6E /* TechLevel.swift */,
 				8DBE8D51222522930094CF6E /* StarType.swift */,
 				8DBE8D532225229D0094CF6E /* Star.swift */,
+				8D8E1620226CEA9C00EBDCE2 /* Game.swift */,
+				8D8E1622226CEB7600EBDCE2 /* Ship.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -166,14 +178,13 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
-		8DD2FF4E2216696000E09482 /* View */ = {
+		8DD2FF4E2216696000E09482 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8D63C01022193E9F006916A6 /* ConfigurePlayerViewModel.swift */,
-				8DD2FF2C221668BF00E09482 /* ViewController.swift */,
+				8D8E1624226CEC7D00EBDCE2 /* CreatePlayer */,
 				8DD2FF2E221668BF00E09482 /* Main.storyboard */,
 			);
-			path = View;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		A9310865E4A53A8AC1CFA7EA /* Frameworks */ = {
@@ -352,10 +363,11 @@
 				8DBE8D4C222522590094CF6E /* PoliticalSystem.swift in Sources */,
 				8DBE8D56222524D80094CF6E /* ShipType.swift in Sources */,
 				8DBE8D4E222522660094CF6E /* ResourceModifier.swift in Sources */,
+				8D8E1621226CEA9C00EBDCE2 /* Game.swift in Sources */,
 				8DBE8D542225229D0094CF6E /* Star.swift in Sources */,
-				8D63C01122193E9F006916A6 /* ConfigurePlayerViewModel.swift in Sources */,
+				8D8E1623226CEB7600EBDCE2 /* Ship.swift in Sources */,
 				8DD2FF502216738900E09482 /* Player.swift in Sources */,
-				8DD2FF2D221668BF00E09482 /* ViewController.swift in Sources */,
+				8DD2FF2D221668BF00E09482 /* CreatePlayerViewController.swift in Sources */,
 				8DBE8D4A222522410094CF6E /* Planet.swift in Sources */,
 				8D63C00F22193C2D006916A6 /* Difficulty.swift in Sources */,
 				8DBE8D52222522930094CF6E /* StarType.swift in Sources */,
