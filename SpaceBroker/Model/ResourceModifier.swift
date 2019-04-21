@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Resource: CaseIterable {
+enum ResourceModifier: CaseIterable {
     case NoSpecialResources
     case MineralRich
     case MineralPoor

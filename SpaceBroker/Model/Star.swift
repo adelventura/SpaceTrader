@@ -11,15 +11,13 @@ import Foundation
 class Star {
     let name: String
     let starType: StarType
-    let xCoordinate: Int
-    let yCoordinate: Int
+    let coordinates: (Int, Int)
     var planets: [Planet]
     
-    init (name: String, starType: StarType, xCoordinate: Int, yCoordinate: Int, planets: [Planet] = []) {
+    init(name: String, starType: StarType, coordinates: (Int, Int), planets: [Planet]) {
         self.name = name
         self.starType = starType
-        self.xCoordinate = xCoordinate
-        self.yCoordinate = yCoordinate
+        self.coordinates = coordinates
         self.planets = planets
     }
 }

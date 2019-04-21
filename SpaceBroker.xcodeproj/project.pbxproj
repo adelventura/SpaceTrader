@@ -12,18 +12,18 @@
 		8D900B9C221B29BF00FD6FC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D900B9B221B29BF00FD6FC0 /* GoogleService-Info.plist */; };
 		8DBE8D4A222522410094CF6E /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBE8D49222522410094CF6E /* Planet.swift */; };
 		8DBE8D4C222522590094CF6E /* PoliticalSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBE8D4B222522590094CF6E /* PoliticalSystem.swift */; };
-		8DBE8D4E222522660094CF6E /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBE8D4D222522660094CF6E /* Resource.swift */; };
+		8DBE8D4E222522660094CF6E /* ResourceModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBE8D4D222522660094CF6E /* ResourceModifier.swift */; };
 		8DBE8D50222522740094CF6E /* TechLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBE8D4F222522740094CF6E /* TechLevel.swift */; };
 		8DBE8D52222522930094CF6E /* StarType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBE8D51222522930094CF6E /* StarType.swift */; };
 		8DBE8D542225229D0094CF6E /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBE8D532225229D0094CF6E /* Star.swift */; };
-		8DBE8D56222524D80094CF6E /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBE8D55222524D80094CF6E /* Ship.swift */; };
+		8DBE8D56222524D80094CF6E /* ShipType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBE8D55222524D80094CF6E /* ShipType.swift */; };
 		8DD2FF2B221668BF00E09482 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2FF2A221668BF00E09482 /* AppDelegate.swift */; };
 		8DD2FF2D221668BF00E09482 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2FF2C221668BF00E09482 /* ViewController.swift */; };
 		8DD2FF30221668BF00E09482 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DD2FF2E221668BF00E09482 /* Main.storyboard */; };
 		8DD2FF32221668C100E09482 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DD2FF31221668C100E09482 /* Assets.xcassets */; };
 		8DD2FF35221668C100E09482 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DD2FF33221668C100E09482 /* LaunchScreen.storyboard */; };
 		8DD2FF40221668C100E09482 /* SpaceBrokerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2FF3F221668C100E09482 /* SpaceBrokerTests.swift */; };
-		8DD2FF502216738900E09482 /* Broker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2FF4F2216738900E09482 /* Broker.swift */; };
+		8DD2FF502216738900E09482 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2FF4F2216738900E09482 /* Player.swift */; };
 		90E7F18959EA0F90CF7A1E5F /* Pods_SpaceBrokerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 129BB6B4811066F6BAC9E77B /* Pods_SpaceBrokerTests.framework */; };
 		DB365044E9BABF2720338D6E /* Pods_SpaceBroker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7DB4C670289FBB56200350 /* Pods_SpaceBroker.framework */; };
 /* End PBXBuildFile section */
@@ -48,11 +48,11 @@
 		8D900B9B221B29BF00FD6FC0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8DBE8D49222522410094CF6E /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		8DBE8D4B222522590094CF6E /* PoliticalSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticalSystem.swift; sourceTree = "<group>"; };
-		8DBE8D4D222522660094CF6E /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		8DBE8D4D222522660094CF6E /* ResourceModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceModifier.swift; sourceTree = "<group>"; };
 		8DBE8D4F222522740094CF6E /* TechLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechLevel.swift; sourceTree = "<group>"; };
 		8DBE8D51222522930094CF6E /* StarType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarType.swift; sourceTree = "<group>"; };
 		8DBE8D532225229D0094CF6E /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
-		8DBE8D55222524D80094CF6E /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
+		8DBE8D55222524D80094CF6E /* ShipType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipType.swift; sourceTree = "<group>"; };
 		8DD2FF27221668BF00E09482 /* SpaceBroker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceBroker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD2FF2A221668BF00E09482 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DD2FF2C221668BF00E09482 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,7 +63,7 @@
 		8DD2FF3B221668C100E09482 /* SpaceBrokerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceBrokerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD2FF3F221668C100E09482 /* SpaceBrokerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceBrokerTests.swift; sourceTree = "<group>"; };
 		8DD2FF41221668C100E09482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8DD2FF4F2216738900E09482 /* Broker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Broker.swift; sourceTree = "<group>"; };
+		8DD2FF4F2216738900E09482 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		B3EA8C8432B1A30DA4659840 /* Pods-SpaceBrokerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceBrokerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpaceBrokerTests/Pods-SpaceBrokerTests.release.xcconfig"; sourceTree = "<group>"; };
 		B6984FA56D59576458B10EF2 /* Pods-SpaceBroker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceBroker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpaceBroker/Pods-SpaceBroker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,12 +143,12 @@
 		8DD2FF4C2216693700E09482 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8DD2FF4F2216738900E09482 /* Broker.swift */,
+				8DD2FF4F2216738900E09482 /* Player.swift */,
 				8D63C00E22193C2D006916A6 /* Difficulty.swift */,
 				8DBE8D49222522410094CF6E /* Planet.swift */,
-				8DBE8D55222524D80094CF6E /* Ship.swift */,
+				8DBE8D55222524D80094CF6E /* ShipType.swift */,
 				8DBE8D4B222522590094CF6E /* PoliticalSystem.swift */,
-				8DBE8D4D222522660094CF6E /* Resource.swift */,
+				8DBE8D4D222522660094CF6E /* ResourceModifier.swift */,
 				8DBE8D4F222522740094CF6E /* TechLevel.swift */,
 				8DBE8D51222522930094CF6E /* StarType.swift */,
 				8DBE8D532225229D0094CF6E /* Star.swift */,
@@ -350,11 +350,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DBE8D4C222522590094CF6E /* PoliticalSystem.swift in Sources */,
-				8DBE8D56222524D80094CF6E /* Ship.swift in Sources */,
-				8DBE8D4E222522660094CF6E /* Resource.swift in Sources */,
+				8DBE8D56222524D80094CF6E /* ShipType.swift in Sources */,
+				8DBE8D4E222522660094CF6E /* ResourceModifier.swift in Sources */,
 				8DBE8D542225229D0094CF6E /* Star.swift in Sources */,
 				8D63C01122193E9F006916A6 /* ConfigurePlayerViewModel.swift in Sources */,
-				8DD2FF502216738900E09482 /* Broker.swift in Sources */,
+				8DD2FF502216738900E09482 /* Player.swift in Sources */,
 				8DD2FF2D221668BF00E09482 /* ViewController.swift in Sources */,
 				8DBE8D4A222522410094CF6E /* Planet.swift in Sources */,
 				8D63C00F22193C2D006916A6 /* Difficulty.swift in Sources */,

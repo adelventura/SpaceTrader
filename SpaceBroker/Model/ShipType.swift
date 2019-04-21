@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Ship: CaseIterable {
+enum ShipType: CaseIterable {
     case Flea
     case Gnat
     case Firefly
