@@ -20,4 +20,15 @@ class StarViewController: UIViewController {
         navigationItem.title = "Star: \(game.player.location.star.name)"
     }
     
+    // MARK: - Actions
+    
+    @IBAction func marketplaceTapped(_ sender: Any) {
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "MarketPlace") as? MarketPlaceViewController else {
+            return
+        }
+        
+        vc.game = game
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
