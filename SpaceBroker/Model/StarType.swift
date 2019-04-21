@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum StarType: CaseIterable {
+enum StarType: String, CaseIterable, Codable {
     case MainSequence
     case RedGiant
     case BlueGiant

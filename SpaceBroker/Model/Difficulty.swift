@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Difficulty: CaseIterable {
+enum Difficulty: String, Codable, CaseIterable {
     case beginner
     case easy
     case normal

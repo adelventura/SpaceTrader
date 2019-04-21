@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum TechLevel: CaseIterable {
+enum TechLevel: String, CaseIterable, Codable {
     case Preagricultural
     case Agricultural
     case Medieval

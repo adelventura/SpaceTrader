@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum PoliticalSystem: CaseIterable {
+enum PoliticalSystem: String, CaseIterable, Codable {
     case Anarchy
     case CapitalistState
     case CommunistState

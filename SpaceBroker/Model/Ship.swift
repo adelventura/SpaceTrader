@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Ship {
+class Ship: Codable {
     let type: ShipType
     
     init(type: ShipType) {

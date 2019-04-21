@@ -8,18 +8,16 @@
 
 import Foundation
 
-class Planet {
+class Planet: Codable {
     let name: String
     let techLevel: TechLevel
     let politicalSystem: PoliticalSystem
     let resource: ResourceModifier
-    let star: Star
     
-    init(name: String, techLevel: TechLevel, politicalSystem: PoliticalSystem, resource: ResourceModifier, star: Star) {
+    init(name: String, techLevel: TechLevel, politicalSystem: PoliticalSystem, resource: ResourceModifier) {
         self.name = name
         self.techLevel = techLevel
         self.politicalSystem = politicalSystem
         self.resource = resource
-        self.star = star
     }
 }

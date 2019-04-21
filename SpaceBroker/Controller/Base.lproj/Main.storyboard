@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yr7-Hl-x1F">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Start View Controller-->
         <scene sceneID="Bto-t8-h2T">
             <objects>
-                <viewController id="yr7-Hl-x1F" sceneMemberID="viewController">
+                <viewController id="yr7-Hl-x1F" customClass="StartViewController" customModule="SpaceBroker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SaW-0f-j7A">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,6 +24,9 @@
                                 <state key="normal" title="New">
                                     <color key="titleColor" red="0.22209364179999999" green="0.257042408" blue="0.34833937879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="newGameTapped:" destination="yr7-Hl-x1F" eventType="touchUpInside" id="HMQ-EL-rJU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SdY-wb-k55">
                                 <rect key="frame" x="103.5" y="508.5" width="207" height="41"/>
@@ -31,6 +34,9 @@
                                 <state key="normal" title="Load">
                                     <color key="titleColor" red="0.22209364179999999" green="0.257042408" blue="0.34833937879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="loadGameTapped:" destination="yr7-Hl-x1F" eventType="touchUpInside" id="2ZT-mN-Mna"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Space Broker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F63-Tt-9yj">
                                 <rect key="frame" x="95.5" y="264" width="223" height="48"/>
@@ -53,6 +59,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NWJ-Ji-sYB"/>
                     </view>
+                    <connections>
+                        <outlet property="loadGameButton" destination="SdY-wb-k55" id="zij-7H-3RW"/>
+                        <outlet property="newGameButton" destination="0zT-6w-XCF" id="0Tm-jx-tTP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="189-sq-hZC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -61,7 +71,7 @@
         <!--Create Player View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="CreatePlayerViewController" customModule="SpaceBroker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreatePlayer" id="BYZ-38-t0r" customClass="CreatePlayerViewController" customModule="SpaceBroker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

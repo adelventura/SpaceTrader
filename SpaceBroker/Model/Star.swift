@@ -6,15 +6,15 @@
 //  Copyright © 2019 Ashley DelVentura. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-class Star {
+class Star: Codable {
     let name: String
     let starType: StarType
-    let coordinates: (Int, Int)
+    let coordinates: CGPoint
     var planets: [Planet]
     
-    init(name: String, starType: StarType, coordinates: (Int, Int), planets: [Planet]) {
+    init(name: String, starType: StarType, coordinates: CGPoint, planets: [Planet]) {
         self.name = name
         self.starType = starType
         self.coordinates = coordinates
