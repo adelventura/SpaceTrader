@@ -14,5 +14,6 @@ enum TechLevel: String, CaseIterable, Codable {
     case Medieval
     case Renaissance
     case EarlyIndustrial
+    case PostIndustrial
     case HiTech
 }

@@ -55,7 +55,20 @@ extension StartViewController: CreatePlayerDelegate {
     func createPlayerController(_ cpvc: CreatePlayerViewController, didCreatePlayer player: Player, withDifficulty difficulty: Difficulty) {
         cpvc.dismiss(animated: true)
         
-        let game = Game(player: player, universe: [], difficulty: difficulty)
+        var stars = (0..<difficulty.numberOfStars)
+            .map { _ in Star.random() }
+        
+        stars.append(Star(
+            name: "Paradise",
+            starType: .Binary,
+            coordinates: CGPoint(x: 0, y: 0),
+            planets: [Planet(name: "Paradise-1")],
+            techLevel: .PostIndustrial,
+            politicalSystem: .Democracy,
+            resource: .NoSpecialResources)
+        )
+        
+        let game = Game(player: player, universe: stars, difficulty: difficulty)
         game.save()
         
         start(game)

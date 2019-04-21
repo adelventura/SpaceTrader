@@ -10,14 +10,8 @@ import Foundation
 
 class Planet: Codable {
     let name: String
-    let techLevel: TechLevel
-    let politicalSystem: PoliticalSystem
-    let resource: ResourceModifier
     
-    init(name: String, techLevel: TechLevel, politicalSystem: PoliticalSystem, resource: ResourceModifier) {
+    init(name: String) {
         self.name = name
-        self.techLevel = techLevel
-        self.politicalSystem = politicalSystem
-        self.resource = resource
     }
 }

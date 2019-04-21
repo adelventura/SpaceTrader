@@ -12,6 +12,7 @@
 		8D8E1623226CEB7600EBDCE2 /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E1622226CEB7600EBDCE2 /* Ship.swift */; };
 		8D8E1627226CECB900EBDCE2 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E1626226CECB900EBDCE2 /* StartViewController.swift */; };
 		8D8E162A226CF19C00EBDCE2 /* StarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E1629226CF19C00EBDCE2 /* StarViewController.swift */; };
+		8D8E162D226CFA2900EBDCE2 /* EnumUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E162C226CFA2900EBDCE2 /* EnumUtils.swift */; };
 		8D900B9C221B29BF00FD6FC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D900B9B221B29BF00FD6FC0 /* GoogleService-Info.plist */; };
 		8DBE8D4A222522410094CF6E /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBE8D49222522410094CF6E /* Planet.swift */; };
 		8DBE8D4C222522590094CF6E /* PoliticalSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBE8D4B222522590094CF6E /* PoliticalSystem.swift */; };
@@ -51,6 +52,7 @@
 		8D8E1622226CEB7600EBDCE2 /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
 		8D8E1626226CECB900EBDCE2 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		8D8E1629226CF19C00EBDCE2 /* StarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarViewController.swift; sourceTree = "<group>"; };
+		8D8E162C226CFA2900EBDCE2 /* EnumUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumUtils.swift; sourceTree = "<group>"; };
 		8D900B9B221B29BF00FD6FC0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8DBE8D49222522410094CF6E /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		8DBE8D4B222522590094CF6E /* PoliticalSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticalSystem.swift; sourceTree = "<group>"; };
@@ -129,6 +131,14 @@
 			path = Sar;
 			sourceTree = "<group>";
 		};
+		8D8E162B226CFA1C00EBDCE2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8D8E162C226CFA2900EBDCE2 /* EnumUtils.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		8DD2FF1E221668BF00E09482 = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +162,7 @@
 		8DD2FF29221668BF00E09482 /* SpaceBroker */ = {
 			isa = PBXGroup;
 			children = (
+				8D8E162B226CFA1C00EBDCE2 /* Utilities */,
 				8DD2FF4E2216696000E09482 /* Controller */,
 				8DD2FF4C2216693700E09482 /* Model */,
 				8DD2FF4D2216694200E09482 /* SupportingFiles */,
@@ -382,6 +393,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D8E162D226CFA2900EBDCE2 /* EnumUtils.swift in Sources */,
 				8DBE8D4C222522590094CF6E /* PoliticalSystem.swift in Sources */,
 				8D8E1627226CECB900EBDCE2 /* StartViewController.swift in Sources */,
 				8DBE8D56222524D80094CF6E /* ShipType.swift in Sources */,
