@@ -151,9 +151,6 @@ class Star: Codable {
     let starType: StarType
     let coordinates: CGPoint
     var planets: [Planet]
-    let techLevel: TechLevel
-    let politicalSystem: PoliticalSystem
-    let resource: ResourceModifier
     
     static func random() -> Star {
         let name = StarNames.random()
@@ -167,22 +164,19 @@ class Star: Codable {
             ),
             planets: [
                 Planet(
-                    name: "\(name)-1"
-                )],
-            techLevel: TechLevel.allCases.random(),
-            politicalSystem: PoliticalSystem.allCases.random(),
-            resource: ResourceModifier.allCases.random()
+                    name: "\(name)-1",
+                    techLevel: TechLevel.allCases.random(),
+                    politicalSystem: PoliticalSystem.allCases.random(),
+                    resource: ResourceModifier.allCases.random()
+                )
+            ]
         )
     }
     
-    init(name: String, starType: StarType, coordinates: CGPoint, planets: [Planet], techLevel: TechLevel, politicalSystem: PoliticalSystem, resource: ResourceModifier) {
+    init(name: String, starType: StarType, coordinates: CGPoint, planets: [Planet]) {
         self.name = name
         self.starType = starType
         self.coordinates = coordinates
         self.planets = planets
-        
-        self.techLevel = techLevel
-        self.politicalSystem = politicalSystem
-        self.resource = resource
     }
 }

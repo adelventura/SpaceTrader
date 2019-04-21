@@ -59,15 +59,17 @@ extension StartViewController: CreatePlayerDelegate {
         var stars = (0..<difficulty.numberOfStars)
             .map { _ in Star.random() }
         
-        let initialPlanet = Planet(name: "Paradise-1")
+        let initialPlanet = Planet(
+            name: "Paradise-1",
+            techLevel: .PostIndustrial,
+            politicalSystem: .Democracy,
+            resource: .NoSpecialResources
+        )
         let initialStar = Star(
             name: "Paradise",
             starType: .Binary,
             coordinates: CGPoint(x: 0, y: 0),
-            planets: [initialPlanet],
-            techLevel: .PostIndustrial,
-            politicalSystem: .Democracy,
-            resource: .NoSpecialResources
+            planets: [initialPlanet]
         )
         
         stars.append(initialStar)

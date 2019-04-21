@@ -16,6 +16,7 @@ enum ResourceModifier: String, CaseIterable, Codable {
     case LotsOfWater
     case RichSoil
     case PoorSoil
+    case RichFauna
     case Lifeless
     case WeirdMushrooms
     case LotsOfHerbs

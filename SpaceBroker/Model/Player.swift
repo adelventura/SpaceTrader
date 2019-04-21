@@ -28,6 +28,7 @@ class Player: Codable {
     let engineerSlider: Int
     
     var ship: Ship
+    var credits: Int
     var location: Location!
     
     init(name: String,
@@ -44,8 +45,8 @@ class Player: Codable {
         self.traderSlider = traderSlider
         self.engineerSlider = engineerSlider
         
+        self.credits = 1000
         self.ship = ship
-        
         self.location = nil
     }
     

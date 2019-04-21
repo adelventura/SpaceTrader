@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum TechLevel: String, CaseIterable, Codable {
+enum TechLevel: Int, CaseIterable, Codable {
     case Preagricultural
     case Agricultural
     case Medieval
@@ -16,4 +16,10 @@ enum TechLevel: String, CaseIterable, Codable {
     case EarlyIndustrial
     case PostIndustrial
     case HiTech
+    
+    var goods: [TradeGood] {
+        return TradeGood
+            .allCases
+            .filter { rawValue <= $0.mtlp.rawValue }
+    }
 }
