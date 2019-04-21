@@ -12,26 +12,36 @@ private enum Constants {
     static let TotalPoints: Int = 16
 }
 
+protocol CreatePlayerDelegate: class {
+    func createPlayerController(_ cpvc: CreatePlayerViewController, didCreatePlayer player: Player, withDifficulty difficulty: Difficulty)
+}
+
 class CreatePlayerViewController: UIViewController {
 
     // MARK: - Properties
     
+    weak var delegate: CreatePlayerDelegate?
+    
+    // MARK: Outlets
+    
     @IBOutlet var nameField: UITextField!
     @IBOutlet var createButton: UIButton!
     
-    @IBOutlet weak var pilotSlider: UISlider!
-    @IBOutlet weak var fighterSlider: UISlider!
-    @IBOutlet weak var traderSlider: UISlider!
-    @IBOutlet weak var engineerSlider: UISlider!
+    @IBOutlet var pilotSlider: UISlider!
+    @IBOutlet var fighterSlider: UISlider!
+    @IBOutlet var traderSlider: UISlider!
+    @IBOutlet var engineerSlider: UISlider!
     
-    @IBOutlet weak var totalPointsUsed: UILabel!
-    @IBOutlet weak var pilotPoints: UILabel!
-    @IBOutlet weak var fighterPoints: UILabel!
-    @IBOutlet weak var traderPoints: UILabel!
-    @IBOutlet weak var engineerPoints: UILabel!
+    @IBOutlet var totalPointsUsed: UILabel!
+    @IBOutlet var pilotPoints: UILabel!
+    @IBOutlet var fighterPoints: UILabel!
+    @IBOutlet var traderPoints: UILabel!
+    @IBOutlet var engineerPoints: UILabel!
     
     @IBOutlet var difficultyButtonContainer: UIView!
     @IBOutlet var difficultyButtons: [UIButton]!
+    
+    // MARK: State
     
     private var difficulty: Difficulty = .beginner
     
@@ -118,7 +128,15 @@ class CreatePlayerViewController: UIViewController {
             return
         }
 
-        // TODO: move on
+        let player = Player(
+            name: name,
+            pilotSlider: Int(pilotSlider!.value),
+            fighterSlider: Int(fighterSlider!.value),
+            traderSlider: Int(traderSlider!.value),
+            engineerSlider: Int(engineerSlider!.value),
+            ship: Ship(type: .Gnat)
+        )
+        delegate?.createPlayerController(self, didCreatePlayer: player, withDifficulty: difficulty)
     }
 
     // MARK: - Effects

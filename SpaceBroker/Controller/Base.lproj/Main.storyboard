@@ -387,52 +387,36 @@
             </objects>
             <point key="canvasLocation" x="376.81159420289856" y="114.94565217391305"/>
         </scene>
-        <!--View Controller-->
+        <!--Star View Controller-->
         <scene sceneID="wxy-ZO-Mx6">
             <objects>
-                <viewController id="7gn-yY-oNf" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Star" id="7gn-yY-oNf" customClass="StarViewController" customModule="SpaceBroker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KKi-EV-AU0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fB7-rR-TDz">
-                                <rect key="frame" x="50" y="153" width="113" height="30"/>
-                                <state key="normal" title="Ship Information"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16N-So-5dh">
-                                <rect key="frame" x="50" y="264" width="85" height="30"/>
-                                <state key="normal" title="Marketplace"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Location: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ch-jI-3ce">
-                                <rect key="frame" x="20" y="44" width="394" height="28"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJh-ro-QAl">
-                                <rect key="frame" x="20" y="82" width="36" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgY-9g-XAG">
-                                <rect key="frame" x="50" y="352" width="30" height="30"/>
-                                <state key="normal" title="Map"/>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="jWK-Ic-st1">
+                                <rect key="frame" x="10" y="54" width="113" height="228"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fB7-rR-TDz">
+                                        <rect key="frame" x="0.0" y="0.0" width="113" height="30"/>
+                                        <state key="normal" title="Ship Information"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16N-So-5dh">
+                                        <rect key="frame" x="0.0" y="99" width="85" height="30"/>
+                                        <state key="normal" title="Marketplace"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgY-9g-XAG">
+                                        <rect key="frame" x="0.0" y="198" width="30" height="30"/>
+                                        <state key="normal" title="Map"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="fB7-rR-TDz" firstAttribute="leading" secondItem="tMe-5N-G9g" secondAttribute="leading" constant="50" id="3PL-Rg-0Dr"/>
-                            <constraint firstItem="aJh-ro-QAl" firstAttribute="top" secondItem="5ch-jI-3ce" secondAttribute="bottom" id="7KP-9a-Ju4"/>
-                            <constraint firstItem="16N-So-5dh" firstAttribute="leading" secondItem="fB7-rR-TDz" secondAttribute="leading" id="87R-gA-jFV"/>
-                            <constraint firstItem="aJh-ro-QAl" firstAttribute="leading" secondItem="5ch-jI-3ce" secondAttribute="leading" id="FLY-yc-RBe"/>
-                            <constraint firstItem="5ch-jI-3ce" firstAttribute="leading" secondItem="tMe-5N-G9g" secondAttribute="leading" constant="20" id="Jbk-ZO-3LG"/>
-                            <constraint firstItem="fB7-rR-TDz" firstAttribute="top" secondItem="aJh-ro-QAl" secondAttribute="bottom" constant="50" id="NjY-RG-AMH"/>
-                            <constraint firstItem="tMe-5N-G9g" firstAttribute="trailing" secondItem="5ch-jI-3ce" secondAttribute="trailing" id="gy7-nd-ruD"/>
-                            <constraint firstItem="16N-So-5dh" firstAttribute="leading" secondItem="tMe-5N-G9g" secondAttribute="leading" id="lLY-JZ-ueV"/>
-                            <constraint firstItem="wgY-9g-XAG" firstAttribute="leading" secondItem="fB7-rR-TDz" secondAttribute="leading" id="nRx-eS-Zb6"/>
-                            <constraint firstItem="aJh-ro-QAl" firstAttribute="top" secondItem="5ch-jI-3ce" secondAttribute="bottom" constant="10" id="xLJ-WM-Bkr"/>
-                            <constraint firstItem="5ch-jI-3ce" firstAttribute="top" secondItem="tMe-5N-G9g" secondAttribute="top" id="zgI-nX-nb6"/>
+                            <constraint firstItem="jWK-Ic-st1" firstAttribute="leading" secondItem="tMe-5N-G9g" secondAttribute="leading" constant="10" id="GXq-xY-S2A"/>
+                            <constraint firstItem="jWK-Ic-st1" firstAttribute="top" secondItem="tMe-5N-G9g" secondAttribute="top" constant="10" id="e3p-ar-KMg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tMe-5N-G9g"/>
                     </view>
