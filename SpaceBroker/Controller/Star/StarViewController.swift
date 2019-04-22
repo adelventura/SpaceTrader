@@ -19,13 +19,17 @@ class StarViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = "Star: \(game.player.location.star.name)"
-        
         buttons.forEach { button in
             button.layer.cornerRadius = 15
             button.layer.borderColor = UIColor.darkGray.cgColor
             button.layer.borderWidth = 2
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationItem.title = "Star: \(game.player.location.star.name)"
     }
     
     // MARK: - Actions

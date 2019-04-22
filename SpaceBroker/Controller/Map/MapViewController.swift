@@ -21,20 +21,16 @@ class MapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let player = game.player
-        let location = player.location!
-        let planet = location.planet
-        let star = location.star
         
         collectionView.register(TitleCollectionViewCell.self, forCellWithReuseIdentifier: "TitleCell")
-        
-        navigationItem.title = "Current Location: \(planet.name) in \(star.name) system at \(star.coordinates)"
     }
     
     // MARK: - Actions
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        updateTitle()
     }
     
     // MARK: - Util
@@ -43,6 +39,15 @@ class MapViewController: UIViewController {
         let current = game.player.location.star
         let ship = game.player.ship
         return game.universe.filter { $0.distance(to: current) < (ship.fuel * ship.type.lyPerTonne) }
+    }
+    
+    private func updateTitle() {
+        let player = game.player
+        let location = player.location!
+        let planet = location.planet
+        let star = location.star
+        
+        navigationItem.title = "Current Location: \(planet.name) in \(star.name) system at \(star.coordinates)"
     }
     
 }
@@ -85,6 +90,7 @@ extension MapViewController: UICollectionViewDelegate {
             self.game.player.location = location
             self.game.save()
             
+            self.updateTitle()
             self.collectionView.reloadData()
         }
         
