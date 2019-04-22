@@ -16,6 +16,8 @@
 		8D8E162F226CFF9B00EBDCE2 /* TradeGood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E162E226CFF9B00EBDCE2 /* TradeGood.swift */; };
 		8D8E1631226D051900EBDCE2 /* RadicalEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E1630226D051900EBDCE2 /* RadicalEvent.swift */; };
 		8D8E1634226D086000EBDCE2 /* MarketPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E1633226D086000EBDCE2 /* MarketPlaceViewController.swift */; };
+		8D8E1637226D2E2F00EBDCE2 /* ShipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E1636226D2E2F00EBDCE2 /* ShipViewController.swift */; };
+		8D8E163A226D465A00EBDCE2 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E1639226D465A00EBDCE2 /* MapViewController.swift */; };
 		8D900B9C221B29BF00FD6FC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D900B9B221B29BF00FD6FC0 /* GoogleService-Info.plist */; };
 		8DBE8D4A222522410094CF6E /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBE8D49222522410094CF6E /* Planet.swift */; };
 		8DBE8D4C222522590094CF6E /* PoliticalSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBE8D4B222522590094CF6E /* PoliticalSystem.swift */; };
@@ -59,6 +61,8 @@
 		8D8E162E226CFF9B00EBDCE2 /* TradeGood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeGood.swift; sourceTree = "<group>"; };
 		8D8E1630226D051900EBDCE2 /* RadicalEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadicalEvent.swift; sourceTree = "<group>"; };
 		8D8E1633226D086000EBDCE2 /* MarketPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPlaceViewController.swift; sourceTree = "<group>"; };
+		8D8E1636226D2E2F00EBDCE2 /* ShipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipViewController.swift; sourceTree = "<group>"; };
+		8D8E1639226D465A00EBDCE2 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8D900B9B221B29BF00FD6FC0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8DBE8D49222522410094CF6E /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		8DBE8D4B222522590094CF6E /* PoliticalSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticalSystem.swift; sourceTree = "<group>"; };
@@ -129,12 +133,12 @@
 			path = Start;
 			sourceTree = "<group>";
 		};
-		8D8E1628226CF18F00EBDCE2 /* Sar */ = {
+		8D8E1628226CF18F00EBDCE2 /* Star */ = {
 			isa = PBXGroup;
 			children = (
 				8D8E1629226CF19C00EBDCE2 /* StarViewController.swift */,
 			);
-			path = Sar;
+			path = Star;
 			sourceTree = "<group>";
 		};
 		8D8E162B226CFA1C00EBDCE2 /* Utilities */ = {
@@ -151,6 +155,22 @@
 				8D8E1633226D086000EBDCE2 /* MarketPlaceViewController.swift */,
 			);
 			path = MarketPlace;
+			sourceTree = "<group>";
+		};
+		8D8E1635226D2E1700EBDCE2 /* Ship */ = {
+			isa = PBXGroup;
+			children = (
+				8D8E1636226D2E2F00EBDCE2 /* ShipViewController.swift */,
+			);
+			path = Ship;
+			sourceTree = "<group>";
+		};
+		8D8E1638226D464C00EBDCE2 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				8D8E1639226D465A00EBDCE2 /* MapViewController.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		8DD2FF1E221668BF00E09482 = {
@@ -228,9 +248,11 @@
 		8DD2FF4E2216696000E09482 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8D8E1638226D464C00EBDCE2 /* Map */,
+				8D8E1635226D2E1700EBDCE2 /* Ship */,
 				8D8E1632226D084E00EBDCE2 /* MarketPlace */,
 				8D8E1625226CECA700EBDCE2 /* Start */,
-				8D8E1628226CF18F00EBDCE2 /* Sar */,
+				8D8E1628226CF18F00EBDCE2 /* Star */,
 				8D8E1624226CEC7D00EBDCE2 /* CreatePlayer */,
 				8DD2FF2E221668BF00E09482 /* Main.storyboard */,
 			);
@@ -416,12 +438,14 @@
 				8D8E1631226D051900EBDCE2 /* RadicalEvent.swift in Sources */,
 				8D8E162F226CFF9B00EBDCE2 /* TradeGood.swift in Sources */,
 				8DBE8D56222524D80094CF6E /* ShipType.swift in Sources */,
+				8D8E1637226D2E2F00EBDCE2 /* ShipViewController.swift in Sources */,
 				8DBE8D4E222522660094CF6E /* ResourceModifier.swift in Sources */,
 				8D8E1634226D086000EBDCE2 /* MarketPlaceViewController.swift in Sources */,
 				8D8E162A226CF19C00EBDCE2 /* StarViewController.swift in Sources */,
 				8D8E1621226CEA9C00EBDCE2 /* Game.swift in Sources */,
 				8DBE8D542225229D0094CF6E /* Star.swift in Sources */,
 				8D8E1623226CEB7600EBDCE2 /* Ship.swift in Sources */,
+				8D8E163A226D465A00EBDCE2 /* MapViewController.swift in Sources */,
 				8DD2FF502216738900E09482 /* Player.swift in Sources */,
 				8DD2FF2D221668BF00E09482 /* CreatePlayerViewController.swift in Sources */,
 				8DBE8D4A222522410094CF6E /* Planet.swift in Sources */,

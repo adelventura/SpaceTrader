@@ -48,4 +48,13 @@ class Ship: Codable {
         return true
     }
     
+    func refuel() -> Bool {
+        guard fuel < type.fuelCapacity else {
+            return false
+        }
+        
+        fuel += 1
+        return true
+    }
+    
 }
