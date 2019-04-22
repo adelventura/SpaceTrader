@@ -20,6 +20,6 @@ enum TechLevel: Int, CaseIterable, Codable {
     var goods: [TradeGood] {
         return TradeGood
             .allCases
-            .filter { rawValue <= $0.mtlp.rawValue }
+            .filter { $0.mtlp.rawValue <= rawValue }
     }
 }

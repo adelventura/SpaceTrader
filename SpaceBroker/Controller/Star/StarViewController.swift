@@ -12,12 +12,20 @@ class StarViewController: UIViewController {
     
     var game: Game!
     
+    @IBOutlet var buttons: [UIButton]!
+    
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationItem.title = "Star: \(game.player.location.star.name)"
+        
+        buttons.forEach { button in
+            button.layer.cornerRadius = 15
+            button.layer.borderColor = UIColor.darkGray.cgColor
+            button.layer.borderWidth = 2
+        }
     }
     
     // MARK: - Actions

@@ -395,25 +395,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="jWK-Ic-st1">
-                                <rect key="frame" x="10" y="54" width="113" height="228"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="jWK-Ic-st1">
+                                <rect key="frame" x="10" y="54" width="394" height="278"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fB7-rR-TDz">
-                                        <rect key="frame" x="0.0" y="0.0" width="113" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="46"/>
+                                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                         <state key="normal" title="Ship Information"/>
                                         <connections>
                                             <action selector="shipInformationTapped:" destination="7gn-yY-oNf" eventType="touchUpInside" id="Ak1-Qg-hOM"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16N-So-5dh">
-                                        <rect key="frame" x="0.0" y="99" width="85" height="30"/>
+                                        <rect key="frame" x="0.0" y="116" width="394" height="46"/>
+                                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                         <state key="normal" title="Marketplace"/>
                                         <connections>
                                             <action selector="marketplaceTapped:" destination="7gn-yY-oNf" eventType="touchUpInside" id="1yw-58-owX"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgY-9g-XAG">
-                                        <rect key="frame" x="0.0" y="198" width="30" height="30"/>
+                                        <rect key="frame" x="0.0" y="232" width="394" height="46"/>
+                                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                         <state key="normal" title="Map"/>
                                         <connections>
                                             <action selector="mapTapped:" destination="7gn-yY-oNf" eventType="touchUpInside" id="I2B-bg-1PM"/>
@@ -425,10 +431,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="jWK-Ic-st1" firstAttribute="leading" secondItem="tMe-5N-G9g" secondAttribute="leading" constant="10" id="GXq-xY-S2A"/>
+                            <constraint firstItem="tMe-5N-G9g" firstAttribute="trailing" secondItem="jWK-Ic-st1" secondAttribute="trailing" constant="10" id="SW7-rr-2Kh"/>
                             <constraint firstItem="jWK-Ic-st1" firstAttribute="top" secondItem="tMe-5N-G9g" secondAttribute="top" constant="10" id="e3p-ar-KMg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tMe-5N-G9g"/>
                     </view>
+                    <connections>
+                        <outletCollection property="buttons" destination="fB7-rR-TDz" collectionClass="NSMutableArray" id="Z8o-RP-RAQ"/>
+                        <outletCollection property="buttons" destination="16N-So-5dh" collectionClass="NSMutableArray" id="Vn3-2T-0pv"/>
+                        <outletCollection property="buttons" destination="wgY-9g-XAG" collectionClass="NSMutableArray" id="tB4-7e-2Rg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PZE-c8-R55" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -466,30 +478,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="TtG-hg-CfA">
-                                <rect key="frame" x="0.0" y="187" width="207" height="709"/>
-                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OFF-uN-3G6">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="3kg-6H-C71">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </view>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dVL-3a-CHd">
                                 <rect key="frame" x="207" y="187" width="207" height="709"/>
                                 <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="c77-7p-vFz">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="c77-7p-vFz">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -505,6 +497,34 @@
                                         </view>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="9wS-h1-t0i" id="14j-lL-gkZ"/>
+                                    <outlet property="delegate" destination="9wS-h1-t0i" id="taK-0v-9V2"/>
+                                </connections>
+                            </collectionView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="TtG-hg-CfA">
+                                <rect key="frame" x="0.0" y="187" width="207" height="709"/>
+                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="OFF-uN-3G6">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="3kg-6H-C71">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="9wS-h1-t0i" id="RV7-A6-RLS"/>
+                                    <outlet property="delegate" destination="9wS-h1-t0i" id="Kuj-mM-fvO"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
