@@ -40,4 +40,12 @@ class StarViewController: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    @IBAction func mapTapped(_ sender: Any) {
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "Map") as? MapViewController else {
+            return
+        }
+        
+        vc.game = game
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }

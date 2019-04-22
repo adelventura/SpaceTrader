@@ -51,6 +51,9 @@ class ShipViewController: UIViewController {
         }
         
         player.credits -= 5
+        update()
+        
+        game.save()
     }
     
     override func viewWillAppear(_ animated: Bool) {

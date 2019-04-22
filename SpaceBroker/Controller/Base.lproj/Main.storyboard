@@ -66,7 +66,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="189-sq-hZC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-572.46376811594212" y="114.50892857142857"/>
+            <point key="canvasLocation" x="-335" y="115"/>
         </scene>
         <!--Create Player View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -385,7 +385,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="376.81159420289856" y="114.94565217391305"/>
+            <point key="canvasLocation" x="464" y="115"/>
         </scene>
         <!--Star View Controller-->
         <scene sceneID="wxy-ZO-Mx6">
@@ -415,6 +415,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgY-9g-XAG">
                                         <rect key="frame" x="0.0" y="198" width="30" height="30"/>
                                         <state key="normal" title="Map"/>
+                                        <connections>
+                                            <action selector="mapTapped:" destination="7gn-yY-oNf" eventType="touchUpInside" id="I2B-bg-1PM"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -536,7 +539,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6tx-bi-goj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2308.695652173913" y="114.50892857142857"/>
+            <point key="canvasLocation" x="2038" y="115"/>
         </scene>
         <!--Ship View Controller-->
         <scene sceneID="3Gh-Tn-I8r">
@@ -583,7 +586,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RqS-Ir-EwX">
-                                <rect key="frame" x="20" y="406" width="374" height="30"/>
+                                <rect key="frame" x="20" y="406" width="59" height="30"/>
                                 <state key="normal" title="Buy Fuel"/>
                                 <connections>
                                     <action selector="buyFuelTapped:" destination="efr-zM-WWN" eventType="touchUpInside" id="A7p-hc-6OK"/>
@@ -601,7 +604,6 @@
                             <constraint firstItem="RqS-Ir-EwX" firstAttribute="top" secondItem="Ptd-cu-njn" secondAttribute="bottom" constant="20" id="2UR-cI-QDd"/>
                             <constraint firstItem="bkN-Yb-pqZ" firstAttribute="top" secondItem="KzL-zU-Pc5" secondAttribute="bottom" constant="20" id="2sy-vm-TU8"/>
                             <constraint firstItem="RqS-Ir-EwX" firstAttribute="leading" secondItem="Yme-dq-YYu" secondAttribute="leading" constant="20" id="6e5-ju-JeR"/>
-                            <constraint firstItem="Yme-dq-YYu" firstAttribute="trailing" secondItem="RqS-Ir-EwX" secondAttribute="trailing" constant="20" id="7p4-bX-A5m"/>
                             <constraint firstItem="oG4-Ex-a8C" firstAttribute="top" secondItem="nb0-VJ-IhR" secondAttribute="bottom" constant="50" id="HcO-wk-n3M"/>
                             <constraint firstItem="fyv-TV-REQ" firstAttribute="leading" secondItem="Yme-dq-YYu" secondAttribute="leading" constant="20" id="J3e-gq-Czy"/>
                             <constraint firstItem="bkN-Yb-pqZ" firstAttribute="leading" secondItem="Yme-dq-YYu" secondAttribute="leading" constant="20" id="LB9-1i-cxM"/>
@@ -636,7 +638,57 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X4x-CW-6bf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3119" y="112"/>
+            <point key="canvasLocation" x="2846" y="115"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="lvr-wt-B0q">
+            <objects>
+                <viewController storyboardIdentifier="Map" id="a7w-u0-TPe" customClass="MapViewController" customModule="SpaceBroker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7I7-35-voC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IHn-r3-RXn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="WKy-jF-IFX">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="8ft-Ul-CbN">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="a7w-u0-TPe" id="hro-H8-EyH"/>
+                                    <outlet property="delegate" destination="a7w-u0-TPe" id="UHc-Iu-3mc"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PmL-4v-aPB" firstAttribute="trailing" secondItem="IHn-r3-RXn" secondAttribute="trailing" id="QXh-SK-cK5"/>
+                            <constraint firstItem="IHn-r3-RXn" firstAttribute="leading" secondItem="PmL-4v-aPB" secondAttribute="leading" id="Tz8-qp-Jgm"/>
+                            <constraint firstAttribute="bottom" secondItem="IHn-r3-RXn" secondAttribute="bottom" id="jJR-7e-R7d"/>
+                            <constraint firstItem="IHn-r3-RXn" firstAttribute="top" secondItem="PmL-4v-aPB" secondAttribute="top" id="tJS-uo-zmj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PmL-4v-aPB"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="IHn-r3-RXn" id="4XR-Lw-EuF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6R4-Q1-Cz5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3620" y="115"/>
         </scene>
     </scenes>
 </document>

@@ -68,7 +68,7 @@ extension StartViewController: CreatePlayerDelegate {
         let initialStar = Star(
             name: "Paradise",
             starType: .Binary,
-            coordinates: CGPoint(x: 0, y: 0),
+            coordinates: CGPoint(x: 250, y: 250),
             planets: [initialPlanet]
         )
         

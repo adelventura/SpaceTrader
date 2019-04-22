@@ -159,8 +159,8 @@ class Star: Codable {
             name: name,
             starType: StarType.allCases.random(),
             coordinates: CGPoint(
-                x: 0,
-                y: 0
+                x: Int.random(in: 0..<500),
+                y: Int.random(in: 0..<500)
             ),
             planets: [
                 Planet(
@@ -178,5 +178,12 @@ class Star: Codable {
         self.starType = starType
         self.coordinates = coordinates
         self.planets = planets
+    }
+    
+    func distance(to: Star) -> Int {
+        return Int(sqrt(
+            pow(coordinates.x - to.coordinates.x, 2)
+                + pow(coordinates.y - to.coordinates.y, 2)
+        ))
     }
 }

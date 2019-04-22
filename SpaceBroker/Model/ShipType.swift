@@ -49,4 +49,8 @@ enum ShipType: String, CaseIterable, Codable {
         case .Wasp: return 35
         }
     }
+    
+    var lyPerTonne: Int {
+        return 50
+    }
 }
