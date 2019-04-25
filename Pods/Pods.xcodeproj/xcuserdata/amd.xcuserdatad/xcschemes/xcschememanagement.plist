@@ -18,14 +18,14 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>Pods-SpaceBroker.xcscheme</key>
+		<key>Pods-SpaceTrader.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
-		<key>Pods-SpaceBrokerTests.xcscheme</key>
+		<key>Pods-SpaceTraderTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

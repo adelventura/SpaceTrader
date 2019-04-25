@@ -1,0 +1,6 @@
+framework module Pods_SpaceTrader {
+  umbrella header "Pods-SpaceTrader-umbrella.h"
+
+  export *
+  module * { export * }
+}

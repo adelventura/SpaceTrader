@@ -1,13 +1,13 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'SpaceBroker' do
+target 'SpaceTrader' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for SpaceBroker
+  # Pods for SpaceTrader
   pod 'Firebase/Core'
-  target 'SpaceBrokerTests' do
+  target 'SpaceTraderTests' do
     inherit! :search_paths
     # Pods for testing
   end
