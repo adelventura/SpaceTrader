@@ -16,6 +16,7 @@ class TitleCollectionViewCell: UICollectionViewCell {
     
     private func setup() {
         titleLabel = UILabel()
+        titleLabel.textColor = UIColor.white
         contentView.addSubview(titleLabel)
         
         layer.borderColor = UIColor.lightGray.cgColor

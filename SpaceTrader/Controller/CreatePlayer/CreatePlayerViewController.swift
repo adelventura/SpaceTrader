@@ -58,12 +58,7 @@ class CreatePlayerViewController: UIViewController {
 
         createButton.contentEdgeInsets = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
         createButton.layer.cornerRadius = 10
-        
-        createButton.layer.shadowRadius = 2
-        createButton.layer.shadowColor = UIColor.black.cgColor
-        createButton.layer.shadowOffset = CGSize(width: 5, height: 5)
-        createButton.layer.shadowOpacity = 1
-        
+                
         difficultyButtonContainer.layer.cornerRadius = 10
         difficultyButtonContainer.layer.borderWidth = 0.5
         difficultyButtonContainer.layer.borderColor = UIColor.white.cgColor
